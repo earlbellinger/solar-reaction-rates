@@ -1,0 +1,32 @@
+Enter 1 for emdl read, 2 for GONG read
+2  @
+Enter input model file
+#file  @
+nitmax, zeta, nmtot?'
+,,,,,,,,,,  @
+taul0, dtl0, all?
+,,,,,,,,,,  @
+inucpr, iscren, ivreng, weakscreening?
+1,,,,,,,,,,  @
+iscl_rat?
+#iscl,,,,,,   @
+
+Livermore EOS table
+
+1 @
+/home/jcd/evolpack_ast1d_201021/liv-eos.05/EOS2005.Z020  @
+0.02 @
+
+Factors for rescaling reaction rates
+
+1.0    1: H1(H1,e+ nu)H2 #rescale
+1.0    2: He3(He3,2H1)He4 #rescale
+1.0    3: He3(He4,gamma)Be7 #rescale
+1.24    4: Be7(H1,gamma)B8 #rescale
+1.0    5: N14(H1,gamma)O15 #rescale
+1.0    6: C12(H1,gamma)N13 #rescale
+1.0    7: C13(H1,gamma)N14 #rescale
+1.0    8: N15(H1,He4)C12 #rescale
+1.0    9: N15(H1,gamma)O16 #rescale
+1.0   10: O16(H1,gamma)F17 #rescale
+1.0   11: O17(H1,He4)N14 #rescale

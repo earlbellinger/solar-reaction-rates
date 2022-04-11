@@ -1,0 +1,72 @@
+  0%|          | 0/1000 [00:00<?, ?it/s]FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+./run-neutrino_cz: line 7: syntax error near unexpected token `1'
+./run-neutrino_cz: line 7: `  exit(1)'
+cp: cannot stat 'neutr_scl.gong*': No such file or directory
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+FORTRAN STOP
+cp: cannot stat 'LOGS/neutr_scl.dat': No such file or directory
+FORTRAN STOP
+slurmstepd: error: *** JOB 3202448 ON s19n10 CANCELLED AT 2021-08-20T00:03:36 ***

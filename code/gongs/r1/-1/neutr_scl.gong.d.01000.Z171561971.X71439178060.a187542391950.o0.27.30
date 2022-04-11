@@ -1,0 +1,36 @@
+ Neutrino results.
+ Model file: gong.d.01000.Z171561971.X71439178060.a187542391950.o0.27.30 
+ ivreng =  209
+ iscren =    1
+
+ Neutrino cross sections from Bahcall and Pinsonneault (1992)
+
+
+ Reaction scaling factors:
+
+ H1(H1,e+ nu)H2         0.99000
+ He3(He3,2H1)He4        1.00000
+ He3(He4,gamma)Be7      1.00000
+ Be7(H1,gamma)B8        1.00000
+ N14(H1,gamma)O15       1.00000
+ C12(H1,gamma)N13       1.00000
+ C13(H1,gamma)N14       1.00000
+ N15(H1,He4)C12         1.00000
+ N15(H1,gamma)O16       1.00000
+ O16(H1,gamma)F17       1.00000
+ O17(H1,He4)N14         1.00000
+
+ Tc =  1.55781E+07   rhoc =  1.53031E+02  Xc =   0.35037  Z =   0.01716
+
+ total luminosity =  3.84505E+33
+
+
+  k, reaction, phi (in 1e+10 cm**(-2) sec**(-1)), counting rates (in SNU):
+                              Cl37      Ga71
+   1   pp    6.00301E+00     0.000     70.84
+   2   pep   1.48013E-02     0.237      3.18
+   3   Be7   4.89010E-01     1.174     35.80
+   4   B8    5.12919E-04     5.591     12.46
+   5   CN    1.83955E-02     0.156      3.27
+
+ total rates (SNU) =         7.158    125.55

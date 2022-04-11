@@ -1,0 +1,250 @@
+MCMC dir: /scratch/3202448
+Computing ratios
+Condition number: 13223140.495867766
+Initializing calculation
+./astec_mcmc.sh -r -d /scratch/3202448 -n 17413062487135013087 -Y 0.2751994577453649 -Z 0.018560099220429664 -a 1.9065067426415248 -t 4565207731.204826 -r1 1.0105927209353487 -r2 0.960430158642943 -r3 1.0487850083837542 -r4 1.1473969183644759 -r5 1.0307111311911956
+
+Start of run-evol.mass.d
+Thu Aug 19 23:40:50 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:40:51 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:43:16 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z185600992.X70624044310.a190650674260.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z185600992.X70624044310.a190650674260.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z185600992.X70624044310.a190650674260.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+17413062487135013087 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 8198107334354672570 -Y 0.2751023746878196 -Z 0.018525798191552263 -a 1.9070800755420825 -t 4564396329.594277 -r1 1.0078045406073408 -r2 0.9465026071198772 -r3 0.9894476705288683 -r4 0.9339552143384112 -r5 0.8980068421309872
+
+Start of run-evol.mass.d
+Thu Aug 19 23:44:03 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:44:04 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:46:38 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z185257981.X70637182730.a190708007550.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z185257981.X70637182730.a190708007550.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z185257981.X70637182730.a190708007550.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+8198107334354672570 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 10209564143009089889 -Y 0.27495354293354696 -Z 0.018459341065223 -a 1.9051191182508023 -t 4578671169.833223 -r1 0.9907980599256568 -r2 0.8979943777025481 -r3 0.9951345013710337 -r4 1.0513936075066694 -r5 0.9322348317666483
+
+Start of run-evol.mass.d
+Thu Aug 19 23:47:17 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:47:17 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:49:47 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z184593410.X70658711610.a190511911820.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z184593410.X70658711610.a190511911820.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z184593410.X70658711610.a190511911820.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+10209564143009089889 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 5186258517244384615 -Y 0.2750855317788995 -Z 0.018519553192284537 -a 1.9055378930154483 -t 4560908517.488161 -r1 0.9924863311909948 -r2 0.9644406073550189 -r3 0.980205917062668 -r4 1.0644623327119815 -r5 0.9679476106243547
+
+Start of run-evol.mass.d
+Thu Aug 19 23:50:25 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:50:25 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:52:49 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z185195531.X70639491520.a190553789300.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z185195531.X70639491520.a190553789300.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z185195531.X70639491520.a190553789300.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+5186258517244384615 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 4643931860683338884 -Y 0.2751472208494825 -Z 0.018449202848612508 -a 1.9051539026887285 -t 4567594485.325175 -r1 0.9953335381545244 -r2 0.9210283519743361 -r3 0.9777828419779949 -r4 0.9775302371160571 -r5 1.050660511371923
+
+Start of run-evol.mass.d
+Thu Aug 19 23:53:29 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:53:29 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:55:57 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z184492028.X70640357640.a190515390260.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z184492028.X70640357640.a190515390260.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z184492028.X70640357640.a190515390260.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+4643931860683338884 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 7086368983817063542 -Y 0.27496674031650103 -Z 0.018417160889982853 -a 1.9074497474284597 -t 4561729750.362313 -r1 0.9964042530545978 -r2 1.0688850978019362 -r3 1.0097252472482094 -r4 1.0699524483955443 -r5 0.9833376997283673
+
+Start of run-evol.mass.d
+Thu Aug 19 23:56:38 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:56:39 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Thu Aug 19 23:59:12 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z184171608.X70661609890.a190744974740.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z184171608.X70661609890.a190744974740.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z184171608.X70661609890.a190744974740.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+7086368983817063542 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 17555826815017309398 -Y 0.27512146928283043 -Z 0.018485828674915123 -a 1.9057664209340694 -t 4561662829.066364 -r1 1.006781076480465 -r2 0.9503166412968261 -r3 1.0321097083680928 -r4 0.9125647107829878 -r5 0.9980408478201754
+
+Start of run-evol.mass.d
+Thu Aug 19 23:59:51 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Thu Aug 19 23:59:51 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x
+End run-evol
+Fri Aug 20 00:02:28 CEST 2021
+Using evol.mass.stg_27.rin
+inmodel emdl.d.0100.Z184858286.X70639270220.a190576642090.o0.27.s
+Using programme  evol.dcz-liv0511t.d.x
+Using  adipls.pr.rin
+ Enter case number (1, 4, 5 or 6)
+ Enter input file name
+ Enter output file name
+ Possibly enter gravitational constant in units of 1.d-8
+
+ Use cgrav =  6.6723200E-08
+ Input file:
+ agsm.d.0100.Z184858286.X70639270220.a190576642090.o0.27.30.prxq4                
+ Output file:
+ fobs.d.0100.Z184858286.X70639270220.a190576642090.o0.27.30.prxq4                
+/home/earl/astec/solar/mcmc
+17555826815017309398 Files not generated
+./astec_mcmc.sh -r -d /scratch/3202448 -n 11452233825376713801 -Y 0.2751559590715678 -Z 0.018565842572807613 -a 1.9050927700674358 -t 4569563147.155226 -r1 0.9868231644564899 -r2 1.0512200839804817 -r3 1.1049408941978875 -r4 1.001980139046315 -r5 0.9560509473763872
+
+Start of run-evol.mass.d
+Fri Aug 20 00:03:07 CEST 2021
+Making log
+Making ttt
+Making amdl
+Making gong
+Making osc
+trial set to 0100
+Call run-evol
+Fri Aug 20 00:03:07 CEST 2021
+Making scratch
+Making scratch/evolprg
+Using programme  evol.dcz-liv0511.d.x

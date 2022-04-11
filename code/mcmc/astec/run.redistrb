@@ -1,0 +1,67 @@
+#!/bin/csh
+#  driver for redistrb
+
+if($#argv == 0) then
+	echo "Usage: run.redistrb.f <msh> <case> <model no.>"
+        echo "or"
+	echo "Usage: run.redistrb.f <mshnum> <mshcase> <case> <model no.>"
+	exit(1)
+endif
+
+switch($1)
+  case 2:
+	set num = 2402
+	set trailer = $2$1
+	breaksw
+  case 3:
+	set num = 4802
+	set trailer = $2$1
+	breaksw
+  case 4:
+	set num = 9602
+	set trailer = $2$1
+	breaksw
+  case 5:
+	set num = 19202
+	set trailer = $2$1
+	breaksw
+  case 6:
+	set num = 38402
+	set trailer = $2$1
+	breaksw
+  case 7:
+	set num = 76802
+	set trailer = $2$1
+	breaksw
+  default:
+	set msh = $1
+	breaksw
+endsw
+
+if($?trailer) then
+  echo "s/#num/"$num"/" > tmp_rin$$
+  echo "s/#trailer/"$trailer"/" >> tmp_rin$$
+  sed -f tmp_rin$$ $evolbin/rin/redistrb.$2.rrin > \
+    $evolbin/rin/redistrb.$trailer.rin
+  set msh = $trailer
+  shift
+  rm tmp_rin$$
+endif
+
+set rinfile = redistrb.$msh.rin
+if(-f $rinfile) then
+else
+	set rinfile = $evolbin/rin/redistrb.f.$msh.rin
+endif
+
+if(-f $rinfile) then
+else
+	echo $rinfile not found
+	exit(1)
+endif
+
+echo "s/#mzcase/"$2.$3"/" > tmp$$
+sed -f tmp$$ $rinfile > tmp1$$
+redistrb.cy.d tmp1$$ > ttt/ttt.redistrb.$msh
+rm tmp$$ tmp1$$
+

@@ -1,0 +1,174 @@
+**** Note: imixcr changed from 2 to 12, 4/3/03
+
+Data sets needed:
+istdpr (if not ',istdou,'): printed output
+idstrl (default 2): input trial model
+idshvz: (default 12) possible input of Z(log10 q)
+idszab: (default 14) possible input of relative mixture of heavy elements
+idsevl (default 3): output of evolution variables
+    if istore = 1
+idsefl (default 4): output of evolution variables 
+    for first or last model if ifstr = 1 or ilstr = 1
+inopc (default 13): opacity tables
+oscillation output, for isetos = 1, istosc = 1, or
+    ioscpr = 1:
+idsnov (default 15): new oscillation variables
+	idsoov (default 16): old oscillation variables
+idsgng (default 17): GONG model variables
+idsgsm (default 18): GONG model summary
+For complete output (oscillation output or icmout = 1):
+idssum (default 10):   formatted central values
+idscen (default 11):   more extensive formatted central values
+idstm1 (default 20): temporary model file for iterlr = 1
+idstm2 (default 21): temporary model file for iterlr = 1
+
+8 '#cwd/ttt.l3b.prt'   @
+2 '/home/jcd/evolpack_ast_111216/trial/emdl.lrsp.#tmass.s.0'   #logrho
+2 '/home/jcd/evolpack_ast_111216/trial_eff/emdl.lrsp.#tmass.s.0'   #logf
+3 '#cwd/emdl.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'   @
+12 'Z.proffitt'    @
+13 '/home/jcd/evolpack_ast_111216/opac/ghwd-v11.gs98_ax05.ags04' @
+14 '#cwd/hvabund.g91'   @
+15 '0'   @
+15 '#cwd/amdl.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'
+16 '0'   @
+17 '0'   @
+17 '#cwd/gong.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'  
+18 '#cwd/gong/gsum.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'  @
+10 '#cwd/ttt.evol.l3b.fcen'   @
+11 '#cwd/csum.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'  @
+19 '#cwd/cusum.#dif#mass.Z#z.X#xh.a#alfa.o#ovc.#case.#trailer'  @
+20 '#cwd/scratch/ttt.evol.#trailer.tm1'    @
+21 '#cwd/scratch/ttt.evol.#trailer.tm2'    @
+99 '#cwd/#evolfile'   @
+-1 ''   @
+
+2 @
+/home/jcd/evolpack_ast_111216/liv-eos.05/EOS2005.Z010  @
+/home/jcd/evolpack_ast_111216/liv-eos.05/EOS2005.Z030  @
+0.01  @
+0.03  @
+
+ cntrd
+ dsn.mod.tri.eos.opa.eng.bcs.rot.con.int.msh.tst.out.dgn                   
+ dsn.mod.tri.eos.opa.eng.dif.bcs.con.int.msh.tst.out.dgn                   
+ dsn.mod.tri.eos.opa.eng.dif.bcs.con.ovs.int.msh.tst.fin.out.dgn          @
+ dsn:
+ istcon, istart
+ 0 1     @
+istdpr, idstrl, idshvz, idszab, idsevl, idsefl, idssum
+6,,,,,,,,,,,,,,,,,,,,,,,,,,,,      @
+idscen, idsnov, idsoov, idsgng, idsgsm
+,,,,,,,,,,,,,,,          @
+idstm1, idstm2, iducen, iddgm1
+,,19,,,,,,,,,,,,,,,      @
+istdin_in, istdou_in, istdpr_in
+,,,,,,,,,,,,,,   Needed for version c  @
+ mod:
+ am, z, nn
+ 0.#mass0e2 0.0#z 2401      @
+ age0, nt, agefin, icntsl
+ .0 #nt #agefin 0       @
+ .0 #nt 4.78161e9 0       
+ iterlr, nitlr, rsfin, alsfin, zxsfin, epslr
+ 0 7 6.959900E+10 3.846000E+33 ,, 1.00E-06     Needed for version c  @
+ 0 7 6.91931e+10 3.899844E+33 1.00E-06     
+ tri:
+ itrial, nmdtrl, ix, xxh, ix3, istcno, isetzh, isthec
+ 3 1 2 .#xh  1 2 0 2     @
+ nvartr, idatmd, itrleq, ipartr, iptr
+ 6 1 0 0 0     @
+ eos:
+ ihvz, isethv, ianhe0, modeeq, iomfl
+ 1 2 1 1 1       @
+ opa:
+ iwdopc, xhsopc, tsmn, tstr, rhsmn, rhsmx
+ 18 .73307800 3.5000 5.5 -12.0 .0     @
+ timx, rhimn, rhimx, sigstr, inopc, iopccf
+ 8.0019 -8.0 6.0 -5.0 13 ,4,,     @
+ ifdgop, fdgopl, tlopfg, dtlopf, tlopf1, idopfd
+ 0 .0 6.3019 .3001 5.0,,     @
+ iopacm, iopatm, patmos, alamop, zatmop
+ 0 0 .0 1.0 2.00E-02     @
+ 0 0 .0 1.0 1.90E-02 
+ eng:
+ fcno and xzr14 set from Grevesse & Noels (1993) (see hvabund.gn93)
+ fcno, iscren, thte, iche3, agehe3, icnocs, ivreng, iheccs
+ .2490 1 1.0 2 5.000E+07 1 28 0     @
+ xzer3, xzr12, xzr13, xzr14, xzr16
+ ,,,,0.51537,,,,,,,,,,     @
+ ifdeps, epsfdg, qepsf1, qepsf2
+ ,,,,,,,,,,,,,,,,,,   @
+ con:
+ iconcs, imxlng, iturpr, tprfct
+ ,,,,,,,,,,,,,,,,,,    @
+ alfa, etac, phc
+  0.#alfa0d1 .15713485 2.0     @
+ imixcr, ddrmix
+ 2,,,,,,,,,,,,,,        
+ 12,,,,,,,,,,,,,,        @
+ ovs:
+ icnvos, jcnvos, clcovs, cldovs, alphos
+ ,,,,,,,,,,,,,,,,,,,    @
+ icsove, icsovc, alpove, alpovc
+ ,2,,0.#ovc   @
+ rot:
+ isprot, velrot
+ 1 2.6d-5 
+ dif:
+ idiffus, itbdif, tlfdif,dtldif, ctdfmx, rctdif,rctdf1
+ #idif 0,,,,,,,,,,,,,,,,,,,,,,,,,,,        @
+ ismdif, nsmdif
+ ,,,,,,,,   @
+ thetdf:
+ 1 2 3 4  5 6  7 8 9
+First row used until 19/9/03, 13.30
+ , , , ,.5,1,.5, ,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ , , , ,1.,.5,.5, ,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,  @
+ bcs:
+ ntaubc, sbcfct, albdbc, tmnbc, tmxbc, flsatm, iqfit, icsrad
+ 41 1.0 1.0 1.00E-01 .41169819 -8.5 5   1     
+ 41 1.0 1.0 1.00E-02 .666666667d0 0 5   1     @
+ 41 1.0 1.0 1.00E-01 .41169819 -9.0 #iqfit   1     
+ qqbc
+ 1.0361 -.3134 2.44799995 -.29589999 30.0,,,,,,,,,,     
+ 0.6666667d0 0 0 0 0,,,,,,,,,,     @
+ ihe3bc, idfxbc
+ 1  2               @
+ int:
+ eps, nit, ucyt, nucy0, nucy, inentr, icncbc
+ 1.00E-06 30 .1000 10 0 0 0       @
+ thetad
+ .5000 .5000 .5000 1.0 .5000 1.0,,,,,,,,,,,,,     @
+ itndgn, itnprt  
+ 1 0     @
+ msh:
+ istrtc, epsr, wx, wpt, wr, wxh, wx3, wdgr, iwdgrd
+ 101 .151 1.0 5.0 3.0 5. .3001   0.1   3     
+ 21 .021 1.0 5.0 3.0 5. .3001   0.1   3     @
+ wmshos,drmsos,wmshcc,dqmscc,qmscmn,qmscmx
+ ,,500.,,,,,,,,,,,,,,,,,,,,,,   @
+ nrpeat, iprmsh   
+ 1 0     std
+ 0 0     @
+ tst:
+ dt0, dtmx, dtmn, dymx, xdtden, aldtmn, eta, dtfcrd, dtceps
+ 2.00E+13 2.00E+16 2.00E+11 .02500 .1000 100.0 1.0,,,,     @
+ fin:
+Set ifinev to 1 to stop when one condition is satisfied
+Set ifinev to 2 to stop when all conditions are satisfied
+ifinev, fin_age, fin_xc, fin_rad, fin_lum, fin_rhomean, fin_teff
+1,,,,0,0.19,,,,,,,,,,,,,,,,     replaced 20/1/14 @
+ out:
+icmout, istosc, ioscpr, ndsmth, icasex, intr, isetos
+  0 1 1 0 0 20 0 @
+ istore, ifstr, ilstr, ispcpr
+ 1 0 0 0 0      @
+ dgn:
+ idgbcs,idgrhs,idgeos,idgopc,idgeng, idgtnr, idgmxc, idgsdt
+ 1 0 0 0 0 0 1 0   @
+ idgn75, idgn76, idgn77
+ 0 0  0   @
+ itbcrh, irhtst
+ 0 0     @
+

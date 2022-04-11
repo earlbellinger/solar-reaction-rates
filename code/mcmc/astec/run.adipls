@@ -1,0 +1,49 @@
+#!/bin/csh
+#  driver for adipls
+
+if($#argv == 0) then
+	echo "Usage: run.adipls <case> <model no.> <msh>"
+	echo "where <msh> is, e.g., p2"
+	exit(1)
+endif
+
+set icaswn = 10000
+
+set adipls_rin = "adipls.pr.rin"
+#switch($3)
+#        case pr*:
+#          set adipls_rin = "adipls.f"$rad".pr."$spec"rin"
+#          set obscase = 16
+##          set redgiant
+#          breaksw
+#        default:
+#          set adipls_rin = "adipls.f"$rad"."$spec"rin"
+#          set obscase = 15
+#          breaksw
+#endsw
+
+set obscase = 16
+
+if(-f $adipls_rin) then
+	echo "Using " $adipls_rin
+else
+	echo "***** Error. " $adipls_rin "not found".
+	exit(1)
+endif
+
+set mzcasep = $1.$2.$3
+set msh = $3
+
+mkdir_test osc
+
+echo "s/#mzcasep/"$mzcasep"/" > tmp$$
+echo "s/#msh/"$3"/" >> tmp$$
+echo "s/#icaswn/"$icaswn"/" >> tmp$$
+sed -f tmp$$ $adipls_rin > tmp1$$
+run-adipls.c tmp1$$ > ttt/ttt.adipls.$1
+rm tmp$$ tmp1$$
+
+set root = $cwd
+cd osc
+set-fobs.d $obscase $mzcasep
+cd $root

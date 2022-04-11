@@ -1,0 +1,32 @@
+Enter 1 for emdl read, 2 for GONG read
+2  @
+Enter input model file
+gong.d.01000.Z171619008.X71471352870.a187391880960.o0.27.29  @
+nitmax, zeta, nmtot?'
+,,,,,,,,,,  @
+taul0, dtl0, all?
+,,,,,,,,,,  @
+inucpr, iscren, ivreng, weakscreening?
+1,,,,,,,,,,  @
+iscl_rat?
+1,,,,,,   @
+
+Livermore EOS table
+
+1 @
+/ai43/jcd/64b/evolpack_ast1d_201021/liv-eos.05/EOS2005.Z020  @
+0.02 @
+
+Factors for rescaling reaction rates
+
+1.0    1: H1(H1,e+ nu)H2 @
+1.0    2: He3(He3,2H1)He4 @
+0.75    3: He3(He4,gamma)Be7 @
+1.0    4: Be7(H1,gamma)B8 @
+1.0    5: N14(H1,gamma)O15 @
+1.0    6: C12(H1,gamma)N13 @
+1.0    7: C13(H1,gamma)N14 @
+1.0    8: N15(H1,He4)C12 @
+1.0    9: N15(H1,gamma)O16 @
+1.0   10: O16(H1,gamma)F17 @
+1.0   11: O17(H1,He4)N14 @

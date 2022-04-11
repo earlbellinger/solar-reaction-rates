@@ -1,0 +1,68 @@
+2  'amdl/amdl.#mzcasep'   @
+9  'ttt/ttt.adipls.prt.#msh'   @
+11 'osc/agsm.#mzcasep'   @
+4 'osc/amde.#mzcasep'   
+15 '0'   @
+16 'ttt/ttt.adipls.fsm'  @
+-1 ''   @
+
+cntrd:
+dsn.mod.osc.cst.int.out     @
+
+dsn:
+  idsgsm, idsssm, idsefn, idsrkr, idsgkr, idslog?
+, ,,0,,,,,,,,,,,,,,,,,, @
+
+mod:
+  ifind,xmod,imlds,in,irname,nprmod,
+,,,,,,,   @
+  ntrnct,ntrnsf,imdmod,
+,,,,,,,,,,,,,,,,,,,,,, @
+osc:
+  el,nsel,els1,dels,,dfsig1,dfsig2,nsig1,nsig2
+   ,4,0,1,,,,,,,     @
+  itrsig,sig1,istsig,inomde,itrds,
+    1,  4.0,   ,    1,10,,,,,,,,     @
+  dfsig,nsig,iscan,sig2,
+,10,10,2500,,,,,,,,,,,,     @
+eltrw1, eltrw2, sgtrw1, sgtrw2
+,,,,,,,,,,,,,,,,    @
+cst:
+cgrav
+6.67232e-8               @
+int:
+  iplneq,iturpr,icow,alb,
+,,0,,             @
+  istsbc,fctsbc,ibotbc,fcttbc,
+1,,,,,,,,,,,,,,,  @
+  mdintg,iriche,xfit,fcnorm,eps,epssol,itmax,
+5,0,0.5,,,,15,,,,,,,,,,  @
+  fsig,dsigmx,irsevn,xmnevn,nftmax,itsord
+,,,,,-1,,,,,,,,,,,,,,  @
+out:
+  istdpr,nout,nprcen,irsord,iekinr
+9,10,,12,,,,,,,,,     @
+  iper,ivarf,kvarf,npvarf,nfmode,
+0,,,,0,,,,,,,,,,,,     @
+  irotkr,nprtkr,igm1kr,npgmkr,ispcpr,
+0,,,,,,,,,,     @
+icaswn, sigwn1, sigwn2, frqwn1, frqwn2,iorwn1, iorwn2, frlwn1, frlwn2
+#icaswn,,,,,-5000,100,,,,,,,,,,,,,,,,,,,,,,,,   @
+dgn:
+  itssol,idgtss,moddet,iprdet,npout
+,,,,,,,,,,     
+  imstsl,imissl,imjssl,idgnrk
+,,,,,,,,,,,,    
+
+  cntrd,
+osc     !
+osc:
+  el,nsel,els1,dels,,dfsig1,dfsig2,nsig1,nsig2
+   1,0,0,1,,,,,,,     !
+  itrsig,sig1,istsig,inomde,itrds,
+    1,  4,   ,    1,10,,,,,,,,     !
+  dfsig,nsig,iscan,sig2,
+,2,500,2500,,,,,,,,,,,,     
+,3,1000,2500,,,,,,,,,,,,     !
+eltrw1, eltrw2, sgtrw1, sgtrw2
+,,,,,,,,,,,,,,,,    !

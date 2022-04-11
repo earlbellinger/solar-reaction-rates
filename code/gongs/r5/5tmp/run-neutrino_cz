@@ -1,0 +1,44 @@
+#  driver for neutrino
+#  Usage: run-neutrino [-scl] <model name>  (e.g. l4b.25)
+#  Set -scl to scale reaction rates. Note that this requires editing
+#  of neutrino_cz.rin
+if($#argv == 0) then
+  echo "Usage: run-neutrino [-case] <model name>"
+  exit(1)
+endif
+
+set version = neutrino.cz-liv05.d.x
+
+switch($1)
+  case -scl:
+    set scl
+    shift
+    breaksw
+endsw
+
+if($?scl) then
+  set iscl = 1
+  set rescale = "@"
+  set neutr = "neutr_scl"
+else
+  set iscl = 0
+  set rescale = ""
+  set neutr = "neutr"
+endif
+
+set model = $1
+
+echo "Version: " $version
+
+set eprgdir = /home/jcd/evolpack_ast1d_201021 #/ai43/jcd/64b/evolpack_ast1d_201021
+echo "eprgdir: " $eprgdir
+
+echo "s/#file/"$model"/" > tmp_sed$$
+echo "s/#iscl/"$iscl"/" >> tmp_sed$$
+echo "s/#rescale/"$rescale"/" >> tmp_sed$$
+sed -f tmp_sed$$ neutrino_cz.rin > tmp_in$$
+run-prog $eprgdir/auxprg/$version tmp_in$$
+#rm tmp$$ tmp1$$
+egrep 'Model|total' ttt.neutr.out >> ttt.neutr.out.com
+mv ttt.neutr.out {$neutr}.$model
+mv ttt.neutr.integrands {$neutr}_integr.$model

@@ -1,0 +1,102 @@
+#  driver for for evolution programme, varying mass
+#  usage: 
+
+if($#argv == 0) then
+  echo "Usage:"
+#  echo "run-evol.mass.stg [-gong] [d].<mass> <100 Z> <X> <alpha> <ovc> <case>"
+  echo "run-evol.mass.stg [d].<mass> <100 Z> <X> <alpha> <ovc> <case>"
+  echo "<model no>"
+#  echo "If -gong is included, also set gong file"
+  exit(1)
+endif
+
+set sdir = ./ttt
+
+if(-d ttt) then
+else
+	echo "Making ttt"
+	mkdir ttt
+endif
+
+if(-d log) then
+else
+	echo "Making log"
+	mkdir log
+endif
+
+if(-d gong) then
+else
+	echo "Making gong"
+	mkdir gong
+endif
+
+if(-d osc) then
+else
+	echo "Making osc"
+	mkdir osc
+endif
+
+if(-d amdl) then
+else
+	echo "Making amdl"
+	mkdir amdl
+endif
+
+set gong = "@"
+set nogong = " "
+#switch($1)
+#	case -gong:
+#	  set gong = "@"
+#	  set nogong = " "
+#	  shift
+#	  breaksw
+#	default
+#	  set gong = " "
+#	  set nogong = "@"
+#	  breaksw
+#endsw
+
+set iqfit = "5"
+
+set nmass = `echo $1 | sed -e 's/d.//'`
+
+if(-f evol.mass.stg_$6.rin) then 
+	set rin = evol.mass.stg_$6.rin
+else if(-f evol.mass.stg.rin) then 
+	set rin = evol.mass.stg.rin
+else
+	echo "Input file " evol.mass.stg_$6.rin " not found"
+	exit(1)
+endif
+
+echo Using $rin
+
+set inmodel = "emdl."$1".Z"$2".X"$3".a"$4".o"$5"."$6".s"
+echo inmodel $inmodel
+
+echo "s/#mass/"$1"/" > tmp$$
+echo "s/#nmass/"$nmass"/" >> tmp$$
+echo "s/#z/"$2"/" >> tmp$$
+echo "s/#xh/"$3"/" >> tmp$$
+echo "s/#alfa/"$4"/" >> tmp$$
+echo "s/#ovc/"$5"/" >> tmp$$
+echo "s/#case/"$6"/" >> tmp$$
+echo "s/#iqfit/"$iqfit"/" >> tmp$$
+echo "s/#nmdtrl/"$7"/" >> tmp$$
+echo "s?#evolfile?evol-file"$$".log?" >> tmp$$
+echo "s/#gong/"$gong"/" >> tmp$$
+echo "s/#nogong/"$nogong"/" >> tmp$$
+sed -f tmp$$ $rin > tmp1$$
+#run-evol -dbliv0511z tmp1$$ $sdir/ttt.evol.mass.$1.Z$2.X$3.a$4.o$5.$6.$7 run-evol$$.log
+# Replaced by dcliv0511z, 16/5/11
+run-evol -dcliv0511zt tmp1$$ $sdir/ttt.evol.mass.$1.Z$2.X$3.a$4.o$5.$6.$7 run-evol$$.log
+
+cat run-evol$$.log evol-file$$.log > log/log.$1.Z$2.X$3.a$4.o$5.$6.stg
+
+rm run-evol$$.log evol-file$$.log 
+
+rm tmp$$ tmp1$$
+
+set-fgong $1.Z$2.X$3.a$4.o$5.$6.$7 1 >& /dev/null
+
+#rm $sdir/ttt.evol.mass.$1.Z$2.X$3.a$4.o$5.$6.$7
