@@ -1,1 +1,1 @@
-Bellinger, E. P. & Christensen-Dalsgaard, J. (2022). *Towards solar measurements of nuclear reaction rates*. **Monthly Notices of the Royal Astronomical Society**, submitted.
+Bellinger, E. P. & Christensen-Dalsgaard, J. (2022). *[Towards solar measurements of nuclear reaction rates](https://arxiv.org/abs/2206.13570)*. **Monthly Notices of the Royal Astronomical Society**, accepted.
